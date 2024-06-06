@@ -410,13 +410,13 @@ ul {
 	padding: 64px 35px 38px 35px;
 }
 .bg18 {
-	background-image: url(assets/images/bg/services-bg11.jpg);
+	background-image: url(../../assets/images/bg/services-bg11.jpg);
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
 }
 .bg19 {
-	background-image: url(assets/images/bg/project-bg11.jpg);
+	background-image: url(../../assets/images/bg/project-bg11.jpg);
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -5729,7 +5729,7 @@ body {
 					&.video-style1{
 						&.main-video{
 							.video-item .overly-border a i {
-							    font-size: 20px;
+							    font-size: 25px;
 							    line-height: 80px;
 							    color: #126ee8;
 							}
@@ -7400,7 +7400,7 @@ body {
 		.slider{
 			position: relative;
 			.slider-item{
-				background-image: url(assets/images/slider/style1/slide1.jpg);
+				background-image: url(../../assets/images/slider/style1/slide1.jpg);
 				background-position: center;
 				background-repeat: no-repeat;
 				background-size: cover;
@@ -7478,6 +7478,7 @@ body {
 		.slider{
 			position: relative;
 			.slider-item{
+				background-image: url(../../assets/images/slider/style2/slide1.jpg);
 				background-position: center;
 				background-repeat: no-repeat;
 				background-size: cover;
@@ -7553,10 +7554,10 @@ body {
 					}
 				}
 				&.slide-bg2{
-					background-image: url(assets/images/slider/style2/slide2.jpg);
+					background-image: url(../../assets/images/slider/style2/slide2.jpg);
 				}
 				&.slide-bg3{
-					background-image: url(assets/images/slider/style2/slide3.jpg);
+					background-image: url(../../assets/images/slider/style2/slide3.jpg);
 				}
 			}
 			.swiper-pagination{
@@ -10160,7 +10161,7 @@ body {
 					line-height: 32px;
 					padding: 19px 0px 0px 0px;
 					margin: 0px 25px 0px 0px;
-					background-image: url(assets/images/choose/style1/duoble-color-shape.png);
+					background-image: url(../../assets/images/choose/style1/duoble-color-shape.png);
 					background-position: center center;
 					background-repeat: no-repeat;
 					background-size: contain;
@@ -13087,6 +13088,7 @@ body {
 				&.slick-prev{
 					right: 20.2%;
 					top: -120px;
+					margin-right: 8px;
 					&:before{
 					    content: "\ea64";
 					    font-size: 28px;
@@ -13183,7 +13185,7 @@ body {
 			}
 			.slider .slick-arrow.slick-next,
 			.slider .slick-arrow.slick-prev {
-			    top: -108px;
+			    top: 125px;
 			}
 		}
 	}

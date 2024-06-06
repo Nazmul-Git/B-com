@@ -6,7 +6,10 @@ import headerLogo from '../../assets/images/logo.png'
 const Home = () => {
     return (
         <>
-            <Header topbarClass={'toolbar-style3'} headerStyle={'header-style3'} headerLogo={headerLogo}/>
+            <Header
+                topbarClass={'toolbar-style3'}
+                headerStyle={'header-style3'}
+                headerLogo={headerLogo} />
             <HomeMain />
         </>
     );

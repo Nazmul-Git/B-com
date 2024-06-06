@@ -2,7 +2,6 @@ import React from 'react';
 import Slider from '../../components/Slider/Slider';
 import sliderImage1 from '../../assets/images/slider/style2/dots-bnr-3-1.png';
 import sliderImage2 from '../../assets/images/slider/style2/dots-bnr-3-2.png';
-import backgroundImage from '../../assets/images/slider/style2/slide1.jpg'; // Import background image
 
 const SliderSection = () => {
     const sliderData = [
@@ -33,7 +32,7 @@ const SliderSection = () => {
         // Add more slider data as needed
     ];
     return (
-        <div className="rs-slider slider-style2" style={{ backgroundImage: `url(${backgroundImage})` }}>
+        <div className="rs-slider slider-style2">
             <div className="slider slider-slide-1">
                 <Slider
                    sliderData={sliderData}

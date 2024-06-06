@@ -44,6 +44,7 @@ import AdvanceTabService1 from './pages/Service/ServiceTabStyle/AdvanceTabServic
 import AdvanceTabService2 from './pages/Service/ServiceTabStyle/AdvanceTabService2/AdvanceTabService2.jsx';
 import ConsultingServices from './pages/Service/ServiceDetails/ConsultingService/ConsultingService.jsx';
 import BusinessServices from './pages/Service/ServiceDetails/BusinessServices/BusinessServices.jsx';
+import AdvancedAnalytic from './pages/Service/ServiceDetails/AdvancedAnalytic/AdvancedAnalytic.jsx';
 import CustomerProduct from './pages/Service/ServiceDetails/CustomerProduct/CustomerProduct.jsx';
 import FinancialAdvisor from './pages/Service/ServiceDetails/FinancialAdvisor/FinancialAdvisor.jsx';
 import InvestmentAdvisor from './pages/Service/ServiceDetails/InvestmentAdvisor/InvestmentAdvisor.jsx';
@@ -64,6 +65,10 @@ import ContactUs2 from './pages/Contact/ContactUs2/ContactUs2.jsx';
 import ContactUs3 from './pages/Contact/ContactUs3/ContactUs3.jsx';
 
 const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Home />,
+  },
   {
     path: "/index",
     element: <Home />,
@@ -194,7 +199,7 @@ const router = createBrowserRouter([
   },
   {
     path: "/advanced-analytic",
-    element: <consultingServices/>
+    element: <AdvancedAnalytic/>
   },
   {
     path: "/business-services",
