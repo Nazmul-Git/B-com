@@ -53,8 +53,8 @@ const Slider = ({ sliderData,showPagination,previewPhone,previewPhoneExt,preview
                                         </h1>
                                         <p className="desc wow fadeInRight">{slider.details}</p>
                                         <ul className="slider-btn wow fadeInUp">
-                                            <li><Link className="readon contact" to="contact-us-1.html">Discover Now</Link></li>
-                                            <li><Link className="readon contact con-small" to="contact-us-1.html">Contact Us</Link></li>
+                                            <li><Link className="readon contact" to="contact-us-1">Discover Now</Link></li>
+                                            <li><Link className="readon contact con-small" to="contact-us-1">Contact Us</Link></li>
                                         </ul>
                                     </div>
                                 </div>

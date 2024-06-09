@@ -7,7 +7,7 @@ const SliderSection = () => {
     const sliderData = [
         {
             sliderClass: '',
-            watermark: 'Watermark1',
+            watermark: 'Welcome',
             title: 'We bring solutions to make life easier for your business.',
             details: 'We perform full analysis of the client’s website and collect information about the competitors. ',
             sliderImage1: sliderImage1,
@@ -15,7 +15,7 @@ const SliderSection = () => {
         },
         {
             sliderClass: 'slide-bg2',
-            watermark: 'Watermark2',
+            watermark: 'Welcome',
             title: 'We bring solutions to make life easier for your business.',
             details: 'We perform full analysis of the client’s website and collect information about the competitors. ',
             sliderImage1: sliderImage1,
@@ -23,7 +23,7 @@ const SliderSection = () => {
         },
         {
             sliderClass: 'slide-bg3',
-            watermark: 'Watermark2',
+            watermark: 'Welcome',
             title: 'We bring solutions to make life easier for your business.',
             details: 'We perform full analysis of the client’s website and collect information about the competitors. ',
             sliderImage1: sliderImage1,

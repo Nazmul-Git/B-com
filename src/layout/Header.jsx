@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import MenuItem from './MenuItem';
 import TopBar from '../layout/TopBar';
 
-const Header = ({ topbarClass, headerStyle, showTopBar, headerLogo }) => {
+const Header = ({ topbarClass, headerStyle, showTopBar, headerLogo,toplbarLayout,bubbleChat1 }) => {
     const [isSearchVisible, setSearchVisible] = useState(false);
     const [isSticky, setSticky] = useState(false);
 
@@ -29,13 +29,13 @@ const Header = ({ topbarClass, headerStyle, showTopBar, headerLogo }) => {
     return (
         <div className="full-width-header">
             <div id="rs-header" className={`rs-header ${headerStyle ? headerStyle : ''}`}>
-                {!showTopBar && <TopBar topbarClass={topbarClass} />}
+                {!showTopBar && <TopBar topbarClass={topbarClass} toplbarLayout={toplbarLayout}/>}
                 <div className={`menu-area menu-sticky ${isSticky ? 'sticky' : ''}`}>
                     <div className="container custom13">
                         <div className="row-table">
                             <div className="col-cell header-logo">
                                 <div className="logo-area">
-                                    <Link to="index.html">
+                                    <Link to="/index">
                                         <img className="normal-logo" src={headerLogo} alt="logo" />
                                         <img className="sticky-logo" src={headerLogo} alt="logo" />
                                     </Link>
@@ -54,6 +54,25 @@ const Header = ({ topbarClass, headerStyle, showTopBar, headerLogo }) => {
                                 </div>
                             </div>
                             <div className="col-cell">
+                                { toplbarLayout ?
+                                <div className="col-cell">
+                                <div className="expand-btn-inner">
+                                    <ul>
+                                        <li className="btn-quote">
+                                            <a href="#">Get a Quote</a>
+                                        </li>
+                                        <li className="nav-link"> 
+                                            <Link id="nav-expander" className="nav-expander bar" to="#">
+                                                   <div className="bar">
+                                                       <span className="dot1"></span>
+                                                       <span className="dot2"></span>
+                                                       <span className="dot3"></span>
+                                                   </div>                                          
+                                            </Link> 
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div> :
                                 <div className="expand-btn-inner">
                                     <ul>
                                         <li className={`search-parent ${isSearchVisible ? 'open_add_class' : ''}`}>
@@ -92,7 +111,7 @@ const Header = ({ topbarClass, headerStyle, showTopBar, headerLogo }) => {
                                         <li className="address-box">
                                             <div className="address-item">
                                                 <div className="address-icon">
-                                                    <img src="assets/images/bubble-chat-1.png" alt="" />
+                                                    <img src={bubbleChat1} alt="" />
                                                 </div>
                                                 <div className="address-text">
                                                     <span className="label">Free Consultancy</span>
@@ -115,7 +134,9 @@ const Header = ({ topbarClass, headerStyle, showTopBar, headerLogo }) => {
                                         </li>
                                     </ul>
                                 </div>
+                                }
                             </div>
+
                         </div>
                     </div>
                 </div>

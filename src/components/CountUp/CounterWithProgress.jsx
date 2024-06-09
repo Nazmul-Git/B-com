@@ -2,7 +2,7 @@ import React from 'react';
 import  CountUp  from 'react-countup';
 import ProgressBar from '../ProgressBar/ProgressBar';
 
-const Counter = ({ counters }) => {
+const CounterWithProgress = ({ counters }) => {
 
     return (
         <div className="row">
@@ -24,5 +24,5 @@ const Counter = ({ counters }) => {
     );
 };
 
-export default Counter;
+export default CounterWithProgress;
  

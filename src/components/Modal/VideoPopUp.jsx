@@ -64,7 +64,7 @@ const VideoPopUp = ({ isOpen, onRequestClose, videoUrl }) => {
                     <iframe
                         src={videoUrl}
                         frameBorder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allow="accelerometer; autoplay; clipboard-black; encrypted-media; gyroscope; picture-in-picture"
                         allowFullScreen
                         title="Video"
                         style={iframeStyle}

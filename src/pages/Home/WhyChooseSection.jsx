@@ -1,5 +1,4 @@
 import React from 'react';
-import CountUp from 'react-countup';
 import HowWorks from '../../components/HowWorks';
 import layer1 from '../../assets/images/choose/style1/layer-1.png';
 import howNew from '../../assets/images/choose/style1/how-new.jpg';
@@ -7,7 +6,8 @@ import pettarn2 from '../../assets/images/choose/style1/pettarn2.png';
 import startLogo from '../../assets/images/choose/style1/star-logo.png';
 import peoples from '../../assets/images/choose/style1/peoples.png';
 import pieImage from '../../assets/images/choose/style1/pie-new.jpg';
-import Counter from '../../components/CountUp/Counter';
+import CounterWithProgress from '../../components/CountUp/CounterWithProgress';
+import CounterFeedback from '../../components/CounterFeedback/CounterFeedback';
 
 const WhyChooseSection = ({ whyNew, pettarn, dot }) => {
     const howItWorksData = [
@@ -81,41 +81,8 @@ const WhyChooseSection = ({ whyNew, pettarn, dot }) => {
                             {/* Counter Start  */}
                             <div className="rs-counter counter-style1 counter-modify8 pt-20">
                                 {/* Counter */}
-                                <Counter counters={counters}/>
-                                
-                                <div className="counter-images-style pt-30">
-                                    <div className="row">
-                                        <div className="col-lg-6 md-mb-10">
-                                            <div className="count-wrap">
-                                                <div className="images-logo mb-15">
-                                                    <img src={startLogo} alt="Images" />
-                                                </div>
-                                                <div className="images-logo mb-7">
-                                                    <img src={peoples} alt="Images" />
-                                                </div>
-                                                <div className="content-part">
-                                                    <p>More than 30,000 amazing feedbacks</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div className="col-lg-6">
-                                            <div className="count-wrap counter-bg1">
-                                                <div className="rs-counter-list">
-                                                    <div className="count-text">
-                                                        <span className="title">{counters[2].title}</span>
-                                                        <div className="count-number">
-                                                            <CountUp className='rs-count' end={counters[2].percentage} duration={2} />
-                                                            <span className="prefix">%</span>
-                                                        </div>
-                                                    </div>
-                                                    <div className="images-logo">
-                                                        <img src={counters[2].image} alt="Images" />
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                                <CounterWithProgress counters={counters}/>
+                                <CounterFeedback counters={counters} peoples={peoples} startLogo={startLogo}/>
                             </div>
                         </div>
                         <div className="col-lg-6">
