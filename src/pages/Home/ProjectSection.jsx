@@ -6,6 +6,7 @@ import 'swiper/css/pagination';
 import { Navigation, Pagination, Autoplay } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import SectionTitle from '../../components/SectionTitle/SectionTitle';
+import ProjectCard1 from '../../components/Projects/ProjectCard1';
 
 const ProjectSection = ({ projects, title, previewPhone, previewPhoneExt, previewSM, previewMd, preview, showPagination }) => {
     const sliderRef = useRef(null);
@@ -74,19 +75,12 @@ const ProjectSection = ({ projects, title, previewPhone, previewPhoneExt, previe
                     >
                         {projects.map(project => (
                             <SwiperSlide key={project.id}>
-                                <div className="project-item">
-                                    <div className="project-img">
-                                        <img src={project.image} alt="Images" />
-                                    </div>
-                                    <div className="project-content">
-                                        <span className="category">
-                                            <Link to="/portfolio-single">{project.category}</Link>
-                                        </span>
-                                        <h5 className="title">
-                                            <Link to="/portfolio-single">{project.title}</Link>
-                                        </h5>
-                                    </div>
-                                </div>
+                                <ProjectCard1
+                                    image={project.image}
+                                    category={project.category}
+                                    title={project.title}
+                                    link={project.link}
+                                />
                             </SwiperSlide>
                         ))}
                     </Swiper>

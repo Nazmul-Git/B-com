@@ -25,6 +25,25 @@ import PricingSection from './PricingSection';
 import CTA_Section from './CTA_Section';
 import dotImage from '../../assets/images/cta/style1/dot.png';
 import arrow from '../../assets/images/cta/style1/arrow.png';
+import BlogSection from './BlogSection';
+import blog1 from '../../assets/images/blog/style2/bl1.jpg';
+import blog2 from '../../assets/images/blog/style2/bl2.jpg';
+import blog3 from '../../assets/images/blog/style2/bl3.jpg';
+import OurPartnerSection from './OurPartnerSection';
+// Importing images
+import logo1 from '../../assets/images/partner/style1/black-logo/ptnr-1.png';
+import logo2 from '../../assets/images/partner/style1/black-logo/ptnr-2.png';
+import logo3 from '../../assets/images/partner/style1/black-logo/ptnr-3.png';
+import logo4 from '../../assets/images/partner/style1/black-logo/ptnr-4.png';
+import logo5 from '../../assets/images/partner/style1/black-logo/ptnr-5.png';
+import logo6 from '../../assets/images/partner/style1/black-logo/ptnr-6.png';
+import logo7 from '../../assets/images/partner/style1/black-logo/ptnr-7.png';
+import logo8 from '../../assets/images/partner/style1/black-logo/ptnr-8.png';
+import logo9 from '../../assets/images/partner/style1/black-logo/ptnr-9.png';
+import logo10 from '../../assets/images/partner/style1/black-logo/ptnr-10.png';
+import logo11 from '../../assets/images/partner/style1/black-logo/ptnr-11.png';
+import logo12 from '../../assets/images/partner/style1/black-logo/ptnr-12.png';
+import CTATwoSection from './CTATwoSection';
 
 const HomeTwoMain = () => {
     return (
@@ -62,6 +81,30 @@ const HomeTwoMain = () => {
                 title={' Developing Leader and high performance team'}
                 details={'Placerat vestibulum lectus mauris ultrices eros in. At urna condimen mattis pellentesque id nibh. Massa neque aliquam vestibulum morbi.'}
                 dotImage={dotImage}
+            />
+            <BlogSection
+                blog1={blog1}
+                blog2={blog2}
+                blog3={blog3}
+            />
+
+            <OurPartnerSection
+                logo1={logo1}
+                logo2={logo2}
+                logo3={logo3}
+                logo4={logo4}
+                logo5={logo5}
+                logo6={logo6}
+                logo7={logo7}
+                logo8={logo8}
+                logo9={logo9}
+                logo10={logo10}
+                logo11={logo11}
+                logo12={logo12}
+            />
+
+            <CTATwoSection
+                arrow={arrow}
             />
         </>
     );

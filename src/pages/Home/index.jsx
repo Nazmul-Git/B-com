@@ -10,14 +10,15 @@ const Home = () => {
     return (
         <>
             <Header
-                topbarClass={'toolbar-style3'}
                 headerStyle={'header-style3'}
                 headerLogo={headerLogo} 
-                bubbleChat1={bubbleChat1}
+                logo={bubbleChat1}
+                searchVisible={true}
+                addressBox={true}
             />
             <HomeMain />
             <Footer
-                footerLogoWhite={footerLogoWhite}
+                footerLogo={footerLogoWhite}
             />
         </>
     );

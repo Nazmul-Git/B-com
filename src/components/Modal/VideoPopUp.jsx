@@ -9,7 +9,8 @@ const VideoPopUp = ({ isOpen, onRequestClose, videoUrl }) => {
             backgroundColor: 'rgba(0, 0, 0, 0.75)',
             display: 'flex',
             alignItems: 'center',
-            justifyContent: 'center'
+            justifyContent: 'center',
+            zIndex: 1000
         },
         content: {
             backgroundColor: 'white',

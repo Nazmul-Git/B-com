@@ -2,10 +2,10 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import 'remixicon/fonts/remixicon.css';
 
-const TopBar = ({ topbarClass, toplbarLayout }) => {
+const TopBar = ({ topbarClass, toplbarLayout, contactNumber,mailAddress, mapAddress }) => {
 
   return (
-    <div className={`toolbar-area ${topbarClass ? topbarClass : ''} hidden-md"`}>
+    <div className={`toolbar-area ${topbarClass ? topbarClass : ''} hidden-md`}>
       <div className="container custom13">
         <div className="row y-middle">
           {
@@ -13,7 +13,9 @@ const TopBar = ({ topbarClass, toplbarLayout }) => {
               <>
                 <div className="col-lg-8">
                   <ul className="address-contact-box">
-                    <li>
+                    {
+                      mapAddress &&
+                      <li>
                       <div className="address-item">
                         <div className="address-icon">
                           <i className="ri-map-pin-2-line"></i>
@@ -25,7 +27,10 @@ const TopBar = ({ topbarClass, toplbarLayout }) => {
                         </div>
                       </div>
                     </li>
-                    <li>
+                    }
+                    {
+                      mailAddress &&
+                      <li>
                       <div className="address-item">
                         <div className="address-icon">
                           <i className="ri-mail-send-line"></i>
@@ -37,16 +42,20 @@ const TopBar = ({ topbarClass, toplbarLayout }) => {
                         </div>
                       </div>
                     </li>
-                    <li>
-                      <div className="address-item">
-                        <div className="address-icon">
-                          <i className="ri-phone-line"></i>
+                    }
+                    {
+                      contactNumber &&
+                      <li>
+                        <div className="address-item">
+                          <div className="address-icon">
+                            <i className="ri-phone-line"></i>
+                          </div>
+                          <div className="address-text">
+                            <Link to="tel:+(00)123456789">(00) 123 456 789</Link>
+                          </div>
                         </div>
-                        <div className="address-text">
-                          <Link to="tel:+(00)123456789">(00) 123 456 789</Link>
-                        </div>
-                      </div>
-                    </li>
+                      </li>
+                    }
                   </ul>
                 </div>
                 <div className="col-lg-4">

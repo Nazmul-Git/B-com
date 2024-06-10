@@ -1,15 +1,15 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const Footer = ({footerLogoWhite}) => {
+const Footer = ({footerLogo,footerClass}) => {
     return (
-        <footer id="rs-footer" className="rs-footer footer-main-home footer-style1">
+        <footer id="rs-footer" className={`rs-footer footer-main-home ${footerClass ? footerClass : 'footer-style1'}`}>
             <div className="container custom8">
                 <div className="footer-top">
                     <div className="row">
                         <div className="col-lg-3 md-mb-30">
                             <div className="footer-logo">
-                                <Link to="/"><img src={footerLogoWhite} alt="Logo" /></Link>
+                                <Link to="/"><img src={footerLogo} alt="Logo" /></Link>
                             </div>
                             <p className="description">Fermentum odio eu feugiat pretium nibh. Dolor sit consectetur adipiscing. Over the aenean for pharetra.</p>
                             <ul className="footer-social">

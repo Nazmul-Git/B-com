@@ -1801,6 +1801,7 @@ blockquote {
 						border-color: #4200ff;
 						height: 43px !important;
 						width: 43px !important;
+						padding: 10px;
 						line-height: 43px;
 						&:before{
 							font-size: 20px;
@@ -7345,12 +7346,12 @@ body {
 	}
 	&.banner-style10{
 		position: relative;
-		background-image: url(assets/images/banner/style9/bnr-shape-bg1.png);
+		background-image: url(../../assets/images/banner/style9/bnr-shape-bg1.png);
 		background-repeat: no-repeat;
 		background-size: contain;
 		padding: 210px 0px 310px 0px;
 		.bnr-wrap-overlay{
-			background-image: url(assets/images/banner/style9/bnr-imge-bg.png);
+			background-image: url(../../assets/images/banner/style9/bnr-imge-bg.png);
 			background-position: top right;
 			background-repeat: no-repeat;
 			background-size: auto;
