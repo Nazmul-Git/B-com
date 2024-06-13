@@ -1,9 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const Footer = ({footerLogo,footerClass}) => {
+const Footer = ({ footerLogo, footerClass, footerStyleClass, socialIcon, footerHomeMain, footerBtn }) => {
     return (
-        <footer id="rs-footer" className={`rs-footer footer-main-home ${footerClass ? footerClass : 'footer-style1'}`}>
+        <footer id="rs-footer" className={`rs-footer ${footerHomeMain ? footerHomeMain : ''} ${footerClass ? footerClass : 'footer-style1'} ${footerStyleClass ? footerStyleClass : ''}`}>
             <div className="container custom8">
                 <div className="footer-top">
                     <div className="row">
@@ -12,13 +12,25 @@ const Footer = ({footerLogo,footerClass}) => {
                                 <Link to="/"><img src={footerLogo} alt="Logo" /></Link>
                             </div>
                             <p className="description">Fermentum odio eu feugiat pretium nibh. Dolor sit consectetur adipiscing. Over the aenean for pharetra.</p>
-                            <ul className="footer-social">
-                                <li><Link to="#"><i className="ri-facebook-fill"></i></Link></li>
-                                <li><Link to="#"><i className="ri-twitter-fill"></i></Link></li>
-                                <li><Link to="#"><i className="ri-linkedin-fill"></i></Link></li>
-                                <li><Link to="#"><i className="ri-instagram-fill"></i></Link></li>
-                                <li><Link to="#"><i className="ri-pinterest-fill"></i></Link></li>
-                            </ul>
+                            {
+                                socialIcon &&
+                                <ul className="footer-social">
+                                    <li><Link to="#"><i className="ri-facebook-fill"></i></Link></li>
+                                    <li><Link to="#"><i className="ri-twitter-fill"></i></Link></li>
+                                    <li><Link to="#"><i className="ri-linkedin-fill"></i></Link></li>
+                                    <li><Link to="#"><i className="ri-instagram-fill"></i></Link></li>
+                                    <li><Link to="#"><i className="ri-pinterest-fill"></i></Link></li>
+                                </ul>
+                            }
+                            {
+                                footerBtn &&
+                                <div className="footer-btn">
+                                    <Link className="readon started footer-more" to="/contact-us-1">
+                                        <span className="btn-txt">Discover More</span>
+                                        <i className="ri-arrow-right-line"></i>
+                                    </Link>
+                                </div>
+                            }
                         </div>
                         <div className="col-lg-3 pl-110 md-pl-15">
                             <h5 className="footer-title">Company</h5>

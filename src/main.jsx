@@ -9,6 +9,7 @@ import './index.css'
 import {
   createBrowserRouter,
   RouterProvider,
+  useLocation,
 } from "react-router-dom";
 
 import Home from './pages/Home/Index';
@@ -279,6 +280,7 @@ const router = createBrowserRouter([
     element: <ContactUs3/>
   },
 ]);
+
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>

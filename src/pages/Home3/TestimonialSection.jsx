@@ -1,5 +1,5 @@
 import React from 'react';
-import TestimonialCard from '../../components/Testimonial/TestimonialCard';
+import TestimonialCard2 from '../../components/Testimonial/TestimonialCard2';
 import { Link } from 'react-router-dom';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import testi1 from '../../assets/images/testimonial/style2/testi-1.png';
@@ -85,7 +85,7 @@ const TestimonialSection = ({showPagination,previewPhone,previewPhoneExt,preview
                             >
                                 {testimonialsData.map((testimonial, index) => (
                                     <SwiperSlide key={index}>
-                                        <TestimonialCard
+                                        <TestimonialCard2
                                             image={testimonial.image}
                                             name={testimonial.name}
                                             title={testimonial.title}

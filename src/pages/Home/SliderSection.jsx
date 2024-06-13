@@ -15,7 +15,7 @@ const SliderSection = () => {
         },
         {
             sliderClass: 'slide-bg2',
-            watermark: 'Welcome',
+            watermark: 'Best Consulting Company',
             title: 'We bring solutions to make life easier for your business.',
             details: 'We perform full analysis of the client’s website and collect information about the competitors. ',
             sliderImage1: sliderImage1,
@@ -23,7 +23,7 @@ const SliderSection = () => {
         },
         {
             sliderClass: 'slide-bg3',
-            watermark: 'Welcome',
+            watermark: 'Best Consulting Company',
             title: 'We bring solutions to make life easier for your business.',
             details: 'We perform full analysis of the client’s website and collect information about the competitors. ',
             sliderImage1: sliderImage1,
@@ -37,6 +37,8 @@ const SliderSection = () => {
                 <Slider
                    sliderData={sliderData}
                    showPagination={true}
+                   custom={'custom13'}
+                   slider1={true}
                 />
             </div>
         </div>

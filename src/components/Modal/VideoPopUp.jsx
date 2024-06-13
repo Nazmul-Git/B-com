@@ -9,8 +9,7 @@ const VideoPopUp = ({ isOpen, onRequestClose, videoUrl }) => {
             backgroundColor: 'rgba(0, 0, 0, 0.75)',
             display: 'flex',
             alignItems: 'center',
-            justifyContent: 'center',
-            zIndex: 1000
+            justifyContent: 'center'
         },
         content: {
             backgroundColor: 'white',
@@ -65,7 +64,7 @@ const VideoPopUp = ({ isOpen, onRequestClose, videoUrl }) => {
                     <iframe
                         src={videoUrl}
                         frameBorder="0"
-                        allow="accelerometer; autoplay; clipboard-black; encrypted-media; gyroscope; picture-in-picture"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowFullScreen
                         title="Video"
                         style={iframeStyle}

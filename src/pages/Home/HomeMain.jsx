@@ -33,45 +33,6 @@ import blog3 from '../../assets/images/blog/style5/bl-3.jpg';
 import NewsletterSection from './NewsletterSection ';
 
 const HomeMain = () => {
-    const projects = [
-        {
-            id: 1,
-            category: 'Digital marketing',
-            title: 'Market Analysis',
-            image: port1
-        },
-        {
-            id: 2,
-            category: 'App Design',
-            title: 'Market Analysis',
-            image: port2
-        },
-        {
-            id: 3,
-            category: 'Development Service',
-            title: 'Investment Plan',
-            image: port3
-        },
-        {
-            id: 4,
-            category: 'Marketing Service',
-            title: 'Risk Management',
-            image: port4
-        },
-        {
-            id: 5,
-            category: 'Development Service',
-            title: 'Investment Plan',
-            image: port1
-        },
-        {
-            id: 6,
-            category: 'Branding Design',
-            title: 'Inventory Management',
-            image: port2
-        }
-    ];
-
     return (
         <>
             {/* Hero Slider Section */}
@@ -95,8 +56,14 @@ const HomeMain = () => {
 
             {/* Projects section */}
             <ProjectSection
-                projects={projects}
                 title={'Our completed projects'}
+                mainClass={'sec-title'}
+                otherClass={'mb-50'}
+                titleClass={'title white-color'}
+                port1={port1}
+                port2={port2}
+                port3={port3}
+                port4={port4}
             />
 
             {/* Pricing section */}
@@ -116,6 +83,7 @@ const HomeMain = () => {
                 testi2={testi2}
                 ratting={ratting}
                 quoteIcon={quoteIcon}
+
             // mainClass={'testimonial-style5'}
             // bgImageClass={'bg47'}
             />

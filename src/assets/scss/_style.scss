@@ -1676,6 +1676,7 @@ blockquote {
 				.btn-icon{
 					i{
 						background-color: rgba(41, 41, 101, 1);
+						padding: 14px;
 					}
 				}
 				&:hover{
@@ -1766,6 +1767,7 @@ blockquote {
 				.btn-icon{
 					i{
 						background-color: #080D41;
+						padding: 14px;
 					}
 				}
 				&:hover{
@@ -1779,6 +1781,7 @@ blockquote {
 					i{
 						background-color: $white-color;
 						color: $green-color;
+						padding: 14px;
 					}
 				}
 				.btn-text{
@@ -6811,7 +6814,7 @@ body {
 		}
 	}
 	&.banner-style2{
-		background-image: url(assets/images/banner/banner-bg2.jpg);
+		background-image: url(../../assets/images/banner/banner-bg2.jpg);
 		background-position: bottom center;
 		background-repeat: no-repeat;
 		background-size: cover;
@@ -6873,7 +6876,7 @@ body {
 		}
 	}
 	&.banner-style3{
-		background-image: url(assets/images/banner/style2/banner-bg4.png);
+		background-image: url(../../assets/images/banner/style2/banner-bg4.png);
 		background-repeat: no-repeat;
 		background-position: center;
 		background-size: cover;
@@ -6920,7 +6923,7 @@ body {
 		}
 	}
 	&.banner-style4{
-		background-image: url(assets/images/banner/style3/banner-bg5.png);
+		background-image: url(../../assets/images/banner/style3/banner-bg5.png);
 		background-repeat: no-repeat;
 		background-position: center;
 		background-size: cover;
@@ -7074,7 +7077,7 @@ body {
 			bottom: -22%;
 			height: 100%;
 			width: 100%;
-			background-image: url(assets/images/banner/style4/banner-bg-left.png);
+			background-image: url(../../assets/images/banner/style4/banner-bg-left.png);
 			background-position: left;
 			background-repeat: no-repeat;
 			z-index: -11;
@@ -7083,7 +7086,7 @@ body {
 	&.banner-style6{
 		position: relative;
 		z-index: 11;
-		background-image: url(assets/images/banner/style5/banner-bg7.png);
+		background-image: url(../../assets/images/banner/style5/banner-bg7.png);
 		background-position: center;
 		background-repeat: no-repeat;
 		background-size: cover;
@@ -7136,7 +7139,7 @@ body {
 		}
 	}
 	&.banner-style7{
-		background-image: url(assets/images/banner/style6/banner-bg8.png);
+		background-image: url(../../assets/images/banner/style6/banner-bg8.png);
 		background-repeat: no-repeat;
 		background-size: cover;
 		.content-wrap{
@@ -7435,7 +7438,7 @@ body {
 					}
 				}
 				&.slide-bg2{
-					background-image: url(assets/images/slider/style1/slide2.jpg);
+					background-image: url(../../assets/images/slider/style1/slide2.jpg);
 				}
 			}
 			.swiper-pagination{
@@ -8786,14 +8789,14 @@ body {
 	&.contact-style1{
 		position: relative;
 		.contact-img{
-			background-image: url(assets/images/contact/contact-1.jpg);
+			background-image: url(../../assets/images/contact/contact-1.jpg);
 			background-repeat: no-repeat;
 			background-size: cover;
 		}
 		.contact-wrap{
 			padding: 70px 323px 70px 60px;
 			background-color: #634BF8;
-			background-image: url(assets/images/contact/contact-h8.jpg);
+			background-image: url(../../assets/images/contact/contact-h8.jpg);
 			background-size: cover;
 			.from-control{
 				font-size: 16px;
@@ -9064,7 +9067,7 @@ body {
 	}
 	&.contact-style4{
 		.contact-img{
-			background-image: url(assets/images/contact/contact-2.jpg);
+			background-image: url(../../assets/images/contact/contact-2.jpg);
 			background-position: center;
 			background-repeat: no-repeat;
 			border-radius: 10px 0px 0px 10px;
@@ -9988,7 +9991,7 @@ body {
 		    }
 		}
 		&.woman-video1{
-			background-image: url(assets/images/video/video-img1.jpg);
+			background-image: url(../../assets/images/video/video-img1.jpg);
 			background-repeat: no-repeat;
 			background-position: top left;
 			background-size: cover;
@@ -10289,6 +10292,7 @@ body {
 				.services-icon{
 					img{
 						max-width: 42px;
+						max-height: 42px;
 						transform: scale(1);
 						transition: 0.4s;
 						transition-duration: 0s;
@@ -16424,7 +16428,7 @@ body {
 					}
 				}
 			}
-			.slick-center{
+			.swiper-slide-active{
 				box-shadow: 20px 35px 70px rgba(99, 75, 248, 0.05);
 				.item-content span .center-logo {
 				    opacity: 1;
@@ -18185,12 +18189,12 @@ body {
 				    background-color: #1A001B;
 				}
 				.footer-overlay {
-				    background-image: url(assets/images/footer/footer-2-2.png);
+				    background-image: url(../../assets/images/footer/footer-2-2.png);
 				    background-position: 0% 84%;
 				}
 			}
 			&.footer-black1{
-				background-image: url(assets/images/bg/footer-bg-black.jpg);
+				background-image: url(../../assets/images/bg/footer-bg-black.jpg);
 				background-color: #F4F4F4;
 				background-position: center left;
 				background-repeat: no-repeat;
@@ -18466,7 +18470,7 @@ body {
 		}
 	}
 	&.footer-style2{
-		background-image: url(assets/images/bg/footer-bg.jpg);
+		background-image: url(../../assets/images/bg/footer-bg.jpg);
 		background-position: center center;
 		background-repeat: no-repeat;
 		background-size: cover;

@@ -15,10 +15,14 @@ const Home = () => {
                 logo={bubbleChat1}
                 searchVisible={true}
                 addressBox={true}
+                toplbarLayout1={true}
+                headerLogoSticky={headerLogo}
             />
             <HomeMain />
             <Footer
                 footerLogo={footerLogoWhite}
+                socialIcon={true}
+                footerHomeMain={'footer-main-home'}
             />
         </>
     );

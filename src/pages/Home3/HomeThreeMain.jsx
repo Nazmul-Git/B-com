@@ -17,6 +17,9 @@ import project4 from '../../assets/images/project/style6/pro-4.jpg';
 import project5 from '../../assets/images/project/style6/pro-5.jpg';
 import project6 from '../../assets/images/project/style6/pro-6.jpg';
 import TestimonialSection from './TestimonialSection';
+import VideoSection from './VideoSection';
+import BlogSection from './BlogSection';
+import CTASection from './CTASection';
 
 const HomeThreeMain = () => {
     return (
@@ -48,7 +51,16 @@ const HomeThreeMain = () => {
                 project6={project6}
             />
 
-            <TestimonialSection/>
+            <TestimonialSection />
+
+            <VideoSection
+                title={"We're Delivering The Best Customer Experience"}
+                details={' Placerat vestibulum lectus mauris ultrices eros in. At urna condimen mattis pellentesque id nibh. Massa neque aliquam vestibulum morbi.'}
+            />
+
+            <BlogSection/>
+
+            <CTASection/>
         </>
     );
 };

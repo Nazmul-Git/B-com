@@ -2,8 +2,8 @@ import React from 'react';
 import HomeTwoMain from './HomeTwoMain';
 import Header from '../../layout/Header';
 import headerLogoWhite2 from '../../assets/images/logo-white2.png';
-import Footer from '../../layout/Footer'
 import logoBlack from '../../assets/images/logo-black.png'
+import FooterWithNewsLetter from '../../layout/FooterWithNewsLetter';
 const HomeTwo = () => {
     return (
         <>
@@ -14,14 +14,14 @@ const HomeTwo = () => {
                 contactNumber={true}
                 headerStyle={'header-style3 header-modify1'}
                 headerLogo={headerLogoWhite2}
-                toplbarLayout={true}
+                headerLogoSticky={headerLogoWhite2}
+                toplbarLayout3={true}
                 btnQuote={true}
             />
             <HomeTwoMain />
 
-            <Footer
+            <FooterWithNewsLetter
                 footerLogo={logoBlack}
-                footerClass={'footer-modify1'}
             />
         </>
     );
