@@ -1,5 +1,5 @@
 import React from 'react';
-import HowWorks from '../../components/HowWorks';
+import HowWorks from '../../components/HowWorks/HowWorks';
 import layer1 from '../../assets/images/choose/style1/layer-1.png';
 import howNew from '../../assets/images/choose/style1/how-new.jpg';
 import pettarn2 from '../../assets/images/choose/style1/pettarn2.png';

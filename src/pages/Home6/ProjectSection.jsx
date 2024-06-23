@@ -78,63 +78,64 @@ const ProjectSection = ({ showPagination, previewPhone, previewPhoneExt, preview
                         Our Works
                     </h2>
                 </div>
-                <Swiper
-                    slidesPerView={4}
-                    spaceBetween={0}
-                    loop={true}
-                    pagination={showPagination ? { clickable: true } : false}
-                    modules={[Pagination, Autoplay, Navigation]}
-                    onSwiper={(swiper) => {
-                        // Assign navigation elements
-                        swiper.params.navigation.prevEl = prevRef.current;
-                        swiper.params.navigation.nextEl = nextRef.current;
-                        // Initialize and update navigation
-                        swiper.navigation.init();
-                        swiper.navigation.update();
-                    }}
-                    ref={sliderRef}
-                    breakpoints={{
-                        0: {
-                            slidesPerView: previewPhone || 1,
-                            spaceBetween: 0,
-                        },
-                        576: {
-                            slidesPerView: previewPhoneExt || 1,
-                            spaceBetween: 0,
-                        },
-                        768: {
-                            slidesPerView: previewSM || 2,
-                            spaceBetween: 30,
-                        },
-                        992: {
-                            slidesPerView: previewMd || 3,
-                            spaceBetween: 30,
-                        },
-                        1200: {
-                            slidesPerView: preview || 3,
-                            spaceBetween: 30,
-                        },
-                    }}
-                    className='swiper-wrapper'
-                >
-                    {projectsData.map((project, index) => (
-                        <SwiperSlide key={index}>
-                            <ProjectCard2
-                                key={index}
-                                image={project.image}
-                                category={project.category}
-                                title={project.title}
-                                link={project.link}
-                            />
-                        </SwiperSlide>
-                    ))}
-                </Swiper>
-                <div className="swiper-scrollbar"></div>
-                <div className="swiper-navigation">
-                    <div ref={nextRef} onClick={handleNext} className="swiper-button-next"></div>
-                    <div ref={prevRef} onClick={handlePrev} className="swiper-button-prev"></div>
+                <div className="swiper project-slide2">
+                    <Swiper
+                        slidesPerView={4}
+                        spaceBetween={0}
+                        loop={true}
+                        pagination={showPagination ? { clickable: true } : false}
+                        modules={[Pagination, Autoplay, Navigation]}
+                        onSwiper={(swiper) => {
+                            // Assign navigation elements
+                            swiper.params.navigation.prevEl = prevRef.current;
+                            swiper.params.navigation.nextEl = nextRef.current;
+                            // Initialize and update navigation
+                            swiper.navigation.init();
+                            swiper.navigation.update();
+                        }}
+                        ref={sliderRef}
+                        breakpoints={{
+                            0: {
+                                slidesPerView: previewPhone || 1,
+                                spaceBetween: 0,
+                            },
+                            576: {
+                                slidesPerView: previewPhoneExt || 1,
+                                spaceBetween: 0,
+                            },
+                            768: {
+                                slidesPerView: previewSM || 2,
+                                spaceBetween: 30,
+                            },
+                            992: {
+                                slidesPerView: previewMd || 3,
+                                spaceBetween: 30,
+                            },
+                            1200: {
+                                slidesPerView: preview || 3,
+                                spaceBetween: 30,
+                            },
+                        }}
+                        className='swiper project-slide2'
+                    >
+                        {projectsData.map((project, index) => (
+                            <SwiperSlide key={index}>
+                                <ProjectCard2
+                                    key={index}
+                                    image={project.image}
+                                    category={project.category}
+                                    title={project.title}
+                                    link={project.link}
+                                />
+                            </SwiperSlide>
+                        ))}
+                    </Swiper>
+                    <div className="swiper-scrollbar"></div>
+                    <div className="swiper-navigation">
+                        <div ref={nextRef} onClick={handleNext} className="swiper-button-next"></div>
+                        <div ref={prevRef} onClick={handlePrev} className="swiper-button-prev"></div>
+                    </div>
                 </div>
-
             </div>
         </div>
     );
