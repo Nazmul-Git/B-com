@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import CountUp from 'react-countup';
 import 'remixicon/fonts/remixicon.css';
 
-const AboutSection = ({img1,businessSuccess,rocket}) => {
+const AboutSection = ({img1,businessSuccess,rocket,title,desc}) => {
     return (
         <div className="rs-about about-style3 pt-140 pb-140 md-pt-80 md-pb-80">
             <div className="container custom10">
@@ -32,10 +32,10 @@ const AboutSection = ({img1,businessSuccess,rocket}) => {
                         <div className="about-wrapper">
                             <div className="sec-title">
                                 <h2 className="title title11">
-                                    One of the fastest way to gain business success
+                                    {title}
                                 </h2>
                                 <p className="desc desc8 pb-35">
-                                    We perform a full analysis of the client’s website and collect information about all the competitors to formulate a proper strategy. There is no real universal solution in online marketing strategy.
+                                    {desc}
                                 </p>
                                 <ul className="row check-lists check-main">
                                     <li className="col-lg-6 md-mb-10">
@@ -84,7 +84,7 @@ const AboutSection = ({img1,businessSuccess,rocket}) => {
                                     <li>
                                         <Link className="readon started phone-number normal-blue" to="about-us">
                                             <span className="btn-icon">
-                                                <i className="ri-phone-line"></i>                            
+                                                <i className="ri-phone-fill"></i>                            
                                             </span>
                                             <span className="btn-text">(00) 123 456 789</span>
                                         </Link>

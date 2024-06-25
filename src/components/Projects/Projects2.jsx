@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-const Projects2 = ({projectsData, categories,}) => {
+import SectionTitle from '../SectionTitle/SectionTitle';
+const Projects2 = ({ projectsData, categories, }) => {
     const [activeFilter, setActiveFilter] = useState('*');
 
     const handleFilterChange = (filter) => {
@@ -13,11 +14,18 @@ const Projects2 = ({projectsData, categories,}) => {
     return (
         <div className="rs-project project-style7 project-modify4 pt-125 pb-140 md-pt-80 md-pb-80">
             <div className="container custom10">
-                <div className="sec-title text-center mb-50">
+                {/* <div className="sec-title text-center mb-50">
                     <h2 className="title title12">
                         <span className="watermark">Our case studies</span>
                     </h2>
-                </div>
+                </div> */}
+                <SectionTitle
+                    mainClass={'sec-title text-center'}
+                    otherClass={'mb-50'}
+                    title={'Our case studies'}
+                    titleClass={'title title12'}
+                    watermarkClass={'watermark'}
+                />
                 <div className="gridFilter mb-47 text-center">
                     <div className="portfolio-filter">
                         {categories.map((category, index) => (

@@ -31,10 +31,10 @@ const Projects = ({ projects, previewPhone, previewPhoneExt, previewSM, previewM
     }, []);
 
     return (
-        <div className='slider project-slide-1 slick-initialized slick-slider'>
+        <>
             <button ref={prevRef} onClick={handlePrev} type="button" className="slick-prev slick-arrow" aria-label="Previous" role="button">Previous</button>
             <Swiper
-                slidesPerView={3}
+                slidesPerView={preview}
                 spaceBetween={20}
                 loop={true}
                 pagination={showPagination ? { clickable: true } : false}
@@ -77,13 +77,15 @@ const Projects = ({ projects, previewPhone, previewPhoneExt, previewSM, previewM
                             image={project.image}
                             category={project.category}
                             title={project.title}
-                            link={project.link}
+                            categoryLink={project.categoryLink}
+                            titleLink={project.titleLink}
+                            description={project.description}
                         />
                     </SwiperSlide>
                 ))}
             </Swiper>
             <button ref={nextRef} onClick={handleNext} type="button" className="slick-next slick-arrow" aria-label="Next" role="button">Next</button>
-        </div>
+        </>
     );
 };
 

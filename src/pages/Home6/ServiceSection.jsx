@@ -60,23 +60,6 @@ const servicesData = [
     },
 ];
 
-// const ServiceItem = ({ mainImg, title, description, link }) => (
-//     <div className="col-xl-3 col-md-6 mb-20">
-//         <div className="services-item">
-//             <div className="services-wrap">
-//                 <div className="services-icon">
-//                     <img src={mainImg} alt="" />
-//                 </div>
-//                 <div className="services-content">
-//                     <h6 className="title">
-//                         <a href={link}>{title}</a>
-//                     </h6>
-//                     <p className="services-txt">{description}</p>
-//                 </div>
-//             </div>
-//         </div>
-//     </div>
-// );
 
 const ServicesSection = () => {
     return (

@@ -3,12 +3,7 @@ import CountUp from 'react-countup';
 import ProgressBar from '../../components/ProgressBar/ProgressBar';
 import progressImg1 from '../../assets/images/skillbar/style1/img1.png';
 import progressShape1 from '../../assets/images/skillbar/style1/shape1.png';
-
-const skillsData = [
-    { title: "Design & Development", percentage: 90 },
-    { title: "Digital Marketing", percentage: 80 },
-    { title: "Product Promotion", percentage: 94 }
-];
+import SectionTitle from '../../components/SectionTitle/SectionTitle';
 
 const ProgressSection = () => {
     return (
@@ -34,15 +29,14 @@ const ProgressSection = () => {
                         </div>
                     </div>
                     <div className="col-lg-6">
-                        <div className="sec-title">
-                            <span className="sub-text">your path to success capital</span>
-                            <h2 className="title pb-26">
-                                We know how to develop business marketing globally
-                            </h2>
-                            <p className="desc pb-30">
-                                Malesuada bibendum arcu vitae elementum. Semper eget duis at tellus at urna condimentum. Aliquam malesuada bibendum arcu vitae elementum curabitur vitae nunc sed. Fringilla urna porttitor rhoncus dolor purus non enim.
-                            </p>
-                        </div>
+                        <SectionTitle
+                            subText={true}
+                            subtextTitle={'your path to success capital'}
+                            otherTitleClass={'pb-26'}
+                            title={'We know how to develop business marketing globally'}
+                            detailClass={'desc pb-30'}
+                            details={'Malesuada bibendum arcu vitae elementum. Semper eget duis at tellus at urna condimentum. Aliquam malesuada bibendum arcu vitae elementum curabitur vitae nunc sed. Fringilla urna porttitor rhoncus dolor purus non enim.'}
+                        />
                         <div className="cl-skill-bar">
                             <ProgressBar duration={2000} targetProgress={80} title={'Business Strategy'} bgBarColor={'rgba(240, 92, 78, 0.2)'} bgBarProgressColor={'#f05c4e'} height={'7px'} />
                             <ProgressBar duration={2000} targetProgress={75} title={'Cyber Security'} bgBarColor={'rgba(240, 92, 78, 0.2)'} bgBarProgressColor={'#f05c4e'} height={'7px'} />

@@ -53,6 +53,11 @@ const HomeFourMain = () => {
                 featureShape1={featureShape1}
                 service1={service1}
                 service7={service7}
+                phoneNumber='(00) 123 456 789'
+                subText='About Us'
+                aboutTitle='Over 25+ Years Having Experience in Business Consulting Services'
+                aboutDescription='Malesuada bibendum arcu vitae elementum. Semper eget duis at tellus at urna condimentum. Data malesuada bibendum arcu vitae rhoncus.'
+
             />
             <WhyChooseSection
                 aboutMainImage={aboutMainImage}

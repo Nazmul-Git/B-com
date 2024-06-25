@@ -1,6 +1,7 @@
 import React from 'react';
 import Partner from '../../components/Partner/Partner';
-import { Link } from 'react-router-dom';
+import SectionTitle from '../../components/SectionTitle/SectionTitle';
+
 
 const OurPartnerSection = ({ logo1, logo2, logo3, logo4, logo5, logo6, logo7, logo8, logo9, logo10, logo11, logo12 }) => {
     const partnerLogos = [
@@ -23,19 +24,18 @@ const OurPartnerSection = ({ logo1, logo2, logo3, logo4, logo5, logo6, logo7, lo
             <div className="container custom10">
                 <div className="row y-middle">
                     <div className="col-lg-5 pr-50 md-pr-15 md-mb-50">
-                        <div className="sec-title">
-                            <h2 className="title title11 pb-24">
-                                We partnered with 1k+ companies
-                            </h2>
-                            <p className="desc desc8 pb-35">
-                                Quickly aggregate B2B users and worldwide in potential your data. Progressively plagiarize resource-leveling e-commerce business data services.
-                            </p>
-                            <div className="btn-part">
-                                <Link className="readon consultant get-yellow blue-light" to="/contact-us-1">
-                                    Contact Us
-                                </Link>
-                            </div>
-                        </div>
+                        <SectionTitle
+                            title={'We partnered with 1k+ companies'}
+                            titleClass={'title title11'}
+                            otherClass={'pb-24'}
+                            details={'Quickly aggregate B2B users and worldwide in potential your data. Progressively plagiarize resource-leveling e-commerce business data services.'}
+                            detailClass={'desc desc8 pb-35'}
+                            btnPart={true}
+                            btnClass={'btn-part'}
+                            linkClass={'readon consultant get-yellow blue-light'}
+                            href={'/contact-us-1'}
+                            linkTitle={'Contact Us'}
+                        />
                     </div>
                     <div className="col-lg-7">
                         <div className="partner-wrap">

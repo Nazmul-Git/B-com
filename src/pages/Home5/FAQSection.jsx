@@ -50,6 +50,7 @@ const FAQSection = ({ activeItem, itemsArray }) => {
                                     dataToRender &&
                                     dataToRender.map((faq, index) => (
                                         <Acordion
+                                            key={index}
                                             faq={faq}
                                             index={index}
                                             formatIndex={formatIndex}

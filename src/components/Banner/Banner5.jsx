@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import SectionTitle from '../SectionTitle/SectionTitle';
 
 const Banner5 = ({ mainImage, shapeLove, shapeOne, shapeTwo, shapeThree }) => {
 
@@ -8,17 +8,17 @@ const Banner5 = ({ mainImage, shapeLove, shapeOne, shapeTwo, shapeThree }) => {
             <div className="container">
                 <div className="row">
                     <div className="col-lg-6">
-                        <div className="content-wrap">
-                            <h1 className="title">Insurance Protect Your Family</h1>
-                            <div className="description">
-                                <p>
-                                    For over 45 years, millions of families have looked to us to protect what matters most. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
-                                </p>
-                            </div>
-                            <div className="bnr-btn">
-                                <Link className="readon consultant get-green" to="/contact-us-1">Get a Quote</Link>
-                            </div>
-                        </div>
+                        <SectionTitle
+                            mainClass={'content-wrap'}
+                            title={'Insurance Protect Your Family'}
+                            details={' For over 45 years, millions of families have looked to us to protect what matters most. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,'}
+                            detailClass={'text-white'}
+                            btnPart={true}
+                            btnClass={'bnr-btn'}
+                            linkClass={'readon consultant get-green'}
+                            href={'/contact-us-1'}
+                            linkTitle={'Get a Quote'}
+                        />
                     </div>
                     <div className="col-lg-6">
                         <div className="banner-images">

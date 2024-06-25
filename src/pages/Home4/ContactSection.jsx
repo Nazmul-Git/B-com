@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import SectionTitle from '../../components/SectionTitle/SectionTitle';
 
 const ContactSection = () => {
     const [formData, setFormData] = useState({
@@ -29,12 +30,13 @@ const ContactSection = () => {
                     <div className="col-lg-4 contact-img"></div>
                     <div className="col-lg-4 md-mb-50">
                         <div className="contact-info">
-                            <div className="sec-title mb-45">
-                                <h3 className="title pb-14 title3">Contact Info</h3>
-                                <p className="desc desc6">
-                                    Business ipsum dolor sit amet consectetur adipiscing elit. Suspendisse suscipit sagittis leo elementum.
-                                </p>
-                            </div>
+                            <SectionTitle
+                                otherClass={'mb-45'}
+                                titleClass={'title title3'}
+                                otherTitleClass={'pb-14'}
+                                title={'Contact Info'}
+                                details={'Business ipsum dolor sit amet consectetur adipiscing elit. Suspendisse suscipit sagittis leo elementum.'}
+                            />
                             <div className="address-item mb-30">
                                 <div className="address-icon">
                                     <i className="ri-map-2-line"></i>
@@ -78,11 +80,12 @@ const ContactSection = () => {
                     </div>
                     <div className="col-lg-4">
                         <div className="contact-wrap">
-                            <div className="sec-title mb-25">
-                                <h3 className="title title3 white-color">
-                                    Get in touch
-                                </h3>
-                            </div>
+                            <SectionTitle
+                                otherClass={'mb-25'}
+                                titleClass={'title title3'}
+                                otherTitleClass={'white-color'}
+                                title={'Get in touch'}
+                            />
                             <div id="form-messages"></div>
                             <form id="contact-form" method="post" action="mailer.php" onSubmit={handleSubmit}>
                                 <fieldset>

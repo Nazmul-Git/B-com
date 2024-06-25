@@ -1,9 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const Footer4 = ({footerLogo}) => {
+const Footer4 = ({ footerLogo, footerStyleClass, footerModifyClass, btnClass }) => {
     return (
-        <footer id="rs-footer" className="rs-footer footer-style2">
+        <footer id="rs-footer" className={`rs-footer ${footerStyleClass ? footerStyleClass : 'footer-style2'} ${footerModifyClass ? footerModifyClass : ''}`}>
             <div className="container custom8">
                 <div className="footer-top">
                     <div className="row y-middle">
@@ -13,9 +13,9 @@ const Footer4 = ({footerLogo}) => {
                             </div>
                             <p className="description">We are the world best consulting business company since 2005 and serving many world class company over the world.</p>
                             <div className="footer-btn">
-                                <Link className="readon started footer-more" to="/contact-us-1">
+                                <Link className={`readon started footer-more ${btnClass ? btnClass : ''}`} to="/contact-us-1">
                                     <span className="btn-txt">Discover More</span>
-                                    <i className="ri-arrow-right-line"></i>
+                                    <i className="ri-arrow-right-fill"></i>
                                 </Link>
                             </div>
                         </div>
@@ -48,7 +48,7 @@ const Footer4 = ({footerLogo}) => {
                                         <div className="contact-box">
                                             <div className="address-box mb-12">
                                                 <div className="address-icon">
-                                                    <i className="ri-phone-line"></i>
+                                                    <i className="ri-phone-fill"></i>
                                                 </div>
                                                 <div className="address-text">
                                                     <div className="text">
@@ -58,7 +58,7 @@ const Footer4 = ({footerLogo}) => {
                                             </div>
                                             <div className="address-box mb-12">
                                                 <div className="address-icon">
-                                                    <i className="ri-map-pin-line"></i>
+                                                    <i className="ri-map-pin-fill"></i>
                                                 </div>
                                                 <div className="address-text">
                                                     <div className="text">
@@ -70,7 +70,7 @@ const Footer4 = ({footerLogo}) => {
                                             </div>
                                             <div className="address-box">
                                                 <div className="address-icon">
-                                                    <i className="ri-mail-line"></i>
+                                                    <i className="ri-mail-fill"></i>
                                                 </div>
                                                 <div className="address-text">
                                                     <div className="text">

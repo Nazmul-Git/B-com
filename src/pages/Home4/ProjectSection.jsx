@@ -1,5 +1,4 @@
 import React from 'react';
-
 import SectionTitle from '../../components/SectionTitle/SectionTitle';
 import Projects from '../../components/Projects/Projects';
 import { Link } from 'react-router-dom';
@@ -11,36 +10,48 @@ const ProjectSection = ({ title, mainClass, details, detailClass, otherClass, ti
             id: 1,
             category: 'Digital marketing',
             title: 'Market Analysis',
+            categoryLink: '/portfolio-single',
+            titleLink: '/portfolio-single',
             image: project1
         },
         {
             id: 2,
             category: 'App Design',
             title: 'Market Analysis',
+            categoryLink: '/portfolio-single',
+            titleLink: '/portfolio-single',
             image: project2
         },
         {
             id: 3,
             category: 'Development Service',
             title: 'Investment Plan',
+            categoryLink: '/portfolio-single',
+            titleLink: '/portfolio-single',
             image: project3
         },
         {
             id: 4,
             category: 'Marketing Service',
             title: 'Risk Management',
+            categoryLink: '/portfolio-single',
+            titleLink: '/portfolio-single',
             image: project4
         },
         {
             id: 5,
             category: 'Development Service',
             title: 'Investment Plan',
+            categoryLink: '/portfolio-single',
+            titleLink: '/portfolio-single',
             image: project5
         },
         {
             id: 6,
             category: 'Branding Design',
             title: 'Inventory Management',
+            categoryLink: '/portfolio-single',
+            titleLink: '/portfolio-single',
             image: project6
         }
     ];
@@ -58,9 +69,12 @@ const ProjectSection = ({ title, mainClass, details, detailClass, otherClass, ti
                     borderStyle={true}
                 />
             </div>
-            <Projects
-                projects={projects}
-            />
+            <div className='slider project-slide-1 slick-initialized slick-slider'>
+                <Projects
+                    projects={projects}
+                    preview={4}
+                />
+            </div>
 
             <div className="pro-shape">
                 <div className="pro-animate one">

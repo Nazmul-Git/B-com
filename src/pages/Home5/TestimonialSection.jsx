@@ -77,7 +77,7 @@ const TestimonialSection = ({ previewPhone, previewPhoneExt, previewSM, previewM
                 <div className="slider testi-slide-2">
                     <button ref={prevRef} onClick={handlePrev} type="button" className="slick-prev slick-arrow" aria-label="Previous" role="button">Previous</button>
                     <Swiper
-                        slidesPerView={3}
+                        slidesPerView={preview}
                         spaceBetween={0}
                         loop={true}
                         centeredSlides={true}

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom'; // Assuming you are using react-router for navigation
+import { Link } from 'react-router-dom'; 
 
 const AboutSection = ({ featureShape1, featureImg1, service1, service7 }) => {
     return (
@@ -46,7 +46,7 @@ const AboutSection = ({ featureShape1, featureImg1, service1, service7 }) => {
                                 <div className="bnr-part mt-45">
                                     <Link className="readon started phone-number" to="/about-us">
                                         <span className="btn-icon">
-                                            <i className="ri-phone-line"></i>
+                                            <i className="ri-phone-fill"></i>
                                         </span>
                                         <span className="btn-text">(00) 123 456 789</span>
                                     </Link>

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import VideoPopUp from '../../components/Modal/VideoPopUp';
+import SectionTitle from '../../components/SectionTitle/SectionTitle';
 
 const AboutSection = ({ image1, image2 }) => {
     const [isVideoOpen, setVideoOpen] = useState(false);
@@ -12,12 +13,12 @@ const AboutSection = ({ image1, image2 }) => {
             <div className="container custom10">
                 <div className="row y-middle">
                     <div className="col-lg-6">
-                        <div className="sec-title">
-                            <h2 className="title md-pb-20">
-                                One of the fastest ways to gain business success
-                            </h2>
-                            <div className="border-item"></div>
-                        </div>
+                        <SectionTitle
+                            otherTitleClass={'md-pb-20'}
+                            title={'One of the fastest ways to gain business success'}
+                            borderStyle={true}
+                            borderStyleClass={'border-item'}
+                        />
                     </div>
                     <div className="col-lg-6 pl-40 md-pl-15">
                         <div className="sec-title">

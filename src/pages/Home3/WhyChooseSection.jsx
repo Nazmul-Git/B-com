@@ -33,7 +33,6 @@ const WhyChooseSection = () => {
                         />
 
                         <div className="rs-counter counter-style1 counter-modify13 pb-25">
-                            {/* Counter */}
                             <CounterWithProgress counters={counters} />
                         </div>
 

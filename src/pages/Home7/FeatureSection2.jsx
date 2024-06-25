@@ -5,6 +5,7 @@ import circleImg from '../../assets/images/feature/style7/services/circle.png';
 import mainImg from '../../assets/images/feature/style7/services/main-img.png';
 import img1 from '../../assets/images/feature/style7/services/img-1.png';
 import img2 from '../../assets/images/feature/style7/services/img-2.png';
+import { Link } from 'react-router-dom';
 
 const featureImages = [
     { className: 'one', src: mainImg, alt: 'Main Image' },
@@ -37,7 +38,7 @@ const FeatureSection2 = () => {
                                 ))}
                             </ul>
                             <div className="btn-part mt-35">
-                                <a className="readon consultant get-pink" href="about-us.html">Learn More</a>
+                                <Link className="readon consultant get-pink" to="/about-us">Learn More</Link>
                             </div>
                         </div>
                     </div>

@@ -1,4 +1,5 @@
 import React from 'react';
+import SectionTitle from '../../components/SectionTitle/SectionTitle';
 
 const NewsletterSection = () => {
     return (
@@ -7,11 +8,10 @@ const NewsletterSection = () => {
                 <div className="newsletter-wrapper">
                     <div className="row y-middle">
                         <div className="col-lg-7 md-mb-30">
-                            <div className="sec-title">
-                                <h2 className="title white-color">
-                                    Subscribe to our Newsletter & get latest updates.
-                                </h2>
-                            </div>
+                            <SectionTitle
+                                otherTitleClass={'white-color'}
+                                title={'Subscribe to our Newsletter & get latest updates.'}
+                            />
                         </div>
                         <div className="col-lg-5">
                             <div className="newsletter-form">

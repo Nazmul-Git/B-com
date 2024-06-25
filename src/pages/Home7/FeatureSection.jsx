@@ -4,6 +4,8 @@ import circleImg from '../../assets/images/feature/style7/circle.png';
 import mainImg from '../../assets/images/feature/style7/main-img.png';
 import img1 from '../../assets/images/feature/style7/img-1.png';
 import img2 from '../../assets/images/feature/style7/img-2.png';
+import { Link } from 'react-router-dom';
+import SectionTitle from '../../components/SectionTitle/SectionTitle';
 
 const featureImages = [
     { className: 'one', src: mainImg, alt: 'Main Image' },
@@ -30,20 +32,21 @@ const FeatureSection = () => {
                         </div>
                     </div>
                     <div className="col-lg-6">
-                        <div className="sec-title">
-                            <h2 className="title title5 heading-border heading-pink pb-27">
-                                Save your finances for the future
-                            </h2>
-                            <p className="desc pb-25">
-                                Nulla pharetra diam sit amet nisl suscipit adipiscing bibendum. Viverra adipiscing at in tellus integer feugiat scelerisque varius. Sed vulputate mi sit amet. Quis lectus nulla at volutpat diam ut venenatis tellus Feel free to share samples of your published.
-                            </p>
-                            <p className="desc">
-                                Commodo sed egestas egestas fringilla phasellus. Interdum consectetur libero id faucibus nisl tincidunt eget. Tincidunt vitae semper lectus nulla  volutpat
-                            </p>
-                            <div className="feature-btn mt-45">
-                                <a className="readon consultant get-pink" href="about-us.html">Get Started</a>
-                            </div>
-                        </div>
+                        <SectionTitle
+                            titleClass={'title title5'}
+                            otherTitleClass={'heading-border heading-pink pb-27'}
+                            title={'Save your finances for the future'}
+                            details={'Nulla pharetra diam sit amet nisl suscipit adipiscing bibendum. Viverra adipiscing at in tellus integer feugiat scelerisque varius. Sed vulputate mi sit amet. Quis lectus nulla at volutpat diam ut venenatis tellus Feel free to share samples of your published.'}
+                            detailClass={'desc pb-25'}
+                            details2={'Commodo sed egestas egestas fringilla phasellus. Interdum consectetur libero id faucibus nisl tincidunt eget. Tincidunt vitae semper lectus nulla  volutpat'}
+                            detailClass2={'desc'}
+                            btnPart={true}
+                            btnClass={'feature-btn mt-45'}
+                            linkClass={'readon consultant get-pink'}
+                            href={'/about-us'}
+                            linkTitle={'Get Started'}
+
+                        />
                     </div>
                 </div>
             </div>

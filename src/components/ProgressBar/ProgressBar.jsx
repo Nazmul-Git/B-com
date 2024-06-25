@@ -43,10 +43,10 @@ const ProgressBar = ({ duration, targetProgress, barBgClass, bgBarProgressColor,
                 className="cl-skill-bar"
                 style={{
                     width: '100%',
-                    height: height||'6px',
+                    height: height||'7px',
                     position: 'relative',
                     backgroundColor: `${barBgClass ? barBgClass : 'rgba(26, 115, 233, 0.2)'}`,
-                    background: bgBarColor||'#B9C4D400',
+                    background: bgBarColor||'#1A73E933',
                     borderRadius: '5px'
                 }}
             >

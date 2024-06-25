@@ -5,6 +5,7 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import { Pagination, Navigation, Autoplay } from 'swiper/modules'; // Correct import path for Swiper modules
 import TestimonialCard1 from '../../components/Testimonial/TestimonialCard1';
+import SectionTitle from '../../components/SectionTitle/SectionTitle';
 
 const TestimonialSection = ({ testi1, testi2, ratting, quoteIcon, previewPhone, previewPhoneExt, previewSM, previewMd, preview, showPagination }) => {
     const testimonials = [
@@ -72,11 +73,10 @@ const TestimonialSection = ({ testi1, testi2, ratting, quoteIcon, previewPhone, 
     return (
         <div className="rs-testimonial testimonial-style5 bg47 pt-130 pb-130 md-pt-80 md-pb-80">
             <div className="container">
-                <div className="sec-title mb-20">
-                    <h2 className="title">
-                        What client say?
-                    </h2>
-                </div>
+                <SectionTitle
+                    otherClass={'mb-20'}
+                    title={'What client say?'}
+                />
                 <div className='slider testi-slide-1 slick-initialized slick-slider'>
                     <button ref={prevRef} onClick={handlePrev} type="button" className="slick-prev slick-arrow" aria-label="Previous" role="button">Previous</button>
                     <Swiper

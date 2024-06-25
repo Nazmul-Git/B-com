@@ -77,6 +77,7 @@ const TestimonialSection = ({ previewPhone, previewPhoneExt, previewSM, previewM
                         slidesPerView={3}
                         spaceBetween={0}
                         loop={true}
+                        centeredSlides={true}
                         pagination={showPagination ? { clickable: true } : false}
                         modules={[Pagination, Autoplay, Navigation]}
                         onBeforeInit={(swiper) => {

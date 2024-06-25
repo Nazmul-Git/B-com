@@ -17,7 +17,7 @@ const CTA = ({arrow,ctaClass}) => {
                         <div className="rs-contact-box">
                             <div className="address-item">
                                 <div className="address-icon">
-                                    <i className="ri-phone-line"></i>
+                                    <i className="ri-phone-fill"></i>
                                 </div>
                                 <div className="address-text">
                                     <div className="text">

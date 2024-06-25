@@ -9,6 +9,7 @@ import project1 from '../../assets/images/project/style3/pro-1.jpg';
 import project2 from '../../assets/images/project/style3/pro-2.jpg';
 import project3 from '../../assets/images/project/style3/pro-3.jpg';
 import ProjectCard2 from '../../components/Projects/ProjectCard2';
+import SectionTitle from '../../components/SectionTitle/SectionTitle';
 
 const ProjectSection = ({ showPagination, previewPhone, previewPhoneExt, previewSM, previewMd, preview }) => {
     const sliderRef = useRef(null);
@@ -72,12 +73,12 @@ const ProjectSection = ({ showPagination, previewPhone, previewPhoneExt, preview
     return (
         <div className="rs-project project-style3 pt-70 pb-140 md-pt-14 md-pb-80">
             <div className="container">
-                <div className="sec-title pro-sec">
-                    <span className="sub-text">our projects</span>
-                    <h2 className="title">
-                        Our Works
-                    </h2>
-                </div>
+                <SectionTitle
+                    otherClass={'pro-sec'}
+                    subText={true}
+                    subtextTitle={'our projects'}
+                    title={'Our Works'}
+                />
                 <div className="swiper project-slide2">
                     <Swiper
                         slidesPerView={4}

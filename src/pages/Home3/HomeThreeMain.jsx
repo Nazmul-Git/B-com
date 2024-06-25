@@ -35,6 +35,10 @@ const HomeThreeMain = () => {
                 icon1={icon1}
                 icon2={icon2}
                 sign={sign}
+                serviceTitle={'Extra Benefit Through Lnvest'}
+                serviceText={'A arcu cursus vitae congue mauris rhoncus quis.'}
+                serviceTitle2={'Extra Benefit Through Lnvest'}
+                serviceText2={'A arcu cursus vitae congue mauris rhoncus quis.'}
             />
             <ServiceSection
                 title={'We Serve The Best Work'}
@@ -51,16 +55,18 @@ const HomeThreeMain = () => {
                 project6={project6}
             />
 
-            <TestimonialSection />
+            <TestimonialSection
+                preview={2}
+            />
 
             <VideoSection
                 title={"We're Delivering The Best Customer Experience"}
                 details={' Placerat vestibulum lectus mauris ultrices eros in. At urna condimen mattis pellentesque id nibh. Massa neque aliquam vestibulum morbi.'}
             />
 
-            <BlogSection/>
+            <BlogSection />
 
-            <CTASection/>
+            <CTASection />
         </>
     );
 };

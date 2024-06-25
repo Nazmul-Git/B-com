@@ -35,7 +35,9 @@ const HomeFiveMain = () => {
 
             <ContactSection />
 
-            <TestimonialSection />
+            <TestimonialSection
+                preview={3}
+            />
 
             <FAQSection
                 activeItem={0}

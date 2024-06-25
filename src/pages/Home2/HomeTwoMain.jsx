@@ -53,6 +53,8 @@ const HomeTwoMain = () => {
                 img1={img1}
                 businessSuccess={businessSuccess}
                 rocket={rocket}
+                title={'One of the fastest way to gain business success'}
+                desc={'We perform a full analysis of the client’s website and collect information about all the competitors to formulate a proper strategy. There is no real universal solution in online marketing strategy.'}
             />
             <ServiceSection
                 service1={service1}

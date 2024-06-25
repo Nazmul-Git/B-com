@@ -12,6 +12,7 @@ import blog2 from '../../assets/images/blog/style6/bl-2.jpg';
 import blog3 from '../../assets/images/blog/style6/bl-3.jpg';
 import blog4 from '../../assets/images/blog/style6/bl-4.jpg';
 import blog5 from '../../assets/images/blog/style6/bl-5.jpg';
+import SectionTitle from '../../components/SectionTitle/SectionTitle';
 
 const BlogSection = ({ showPagination, previewPhone, previewPhoneExt, previewSM, previewMd, preview }) => {
     const sliderRef = useRef(null);
@@ -68,11 +69,11 @@ const BlogSection = ({ showPagination, previewPhone, previewPhoneExt, previewSM,
     return (
         <div className="rs-blog blog-main-home gray-bg pt-130 pb-180 md-pt-80 md-pb-80">
             <div className="container">
-                <div className="sec-title mb-55">
-                    <h2 className="title pb-20">
-                        Our Latest Blog
-                    </h2>
-                </div>
+                <SectionTitle
+                    otherClass={'mb-55'}
+                    otherTitleClass={'pb-20'}
+                    title={'Our Latest Blog'}
+                />
                 <div className="slider blog-slide-2">
                     <button ref={prevRef} onClick={handlePrev} type="button" data-role="none" className="slick-prev slick-arrow" aria-label="Previous" role="button">Previous</button>
                     <Swiper

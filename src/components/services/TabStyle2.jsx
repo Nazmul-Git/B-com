@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import TabTwoCard from './TabTwoCard';
+import SectionTitle from '../SectionTitle/SectionTitle';
 
 const TabStyle2 = ({ servicesData }) => {
     return (
@@ -8,11 +9,10 @@ const TabStyle2 = ({ servicesData }) => {
             <div className="container custom10">
                 <div className="row y-middle">
                     <div className="col-lg-7">
-                        <div className="sec-title">
-                            <h2 className="title title11">
-                                One of the fastest ways to gain business success
-                            </h2>
-                        </div>
+                        <SectionTitle
+                            title={'One of the fastest ways to gain business success'}
+                            titleClass={'title title11'}
+                        />
                     </div>
                     <div className="col-lg-5 md-mb-50">
                         <div className="btn-part text-right md-left">

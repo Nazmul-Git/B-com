@@ -9,15 +9,19 @@
         $emailTxt = 'Email: ' . $email . "\n";
         $phone = '';
         $topic = '';
+        $website = '';
         if (!empty($data['phone'])) {
             $phone = 'Phone: ' . $data['phone'] . "\n";
         }
         if (!empty($data['topic'])) {
             $topic = 'Topic: ' . $data['topic'] . "\n";
         }
+        if (!empty($data['website'])) {
+            $website = 'Website: ' . $data['website'] . "\n";
+        }
         $message = "Message:\n" . $data['message'] . "\n";
 
-        $emailContent = $name . $emailTxt . $phone . $topic . $message;
+        $emailContent = $name . $emailTxt . $phone . $topic . $website . $message;
         
         // Receiver Email
         $to = 'info@yourmail.com';
