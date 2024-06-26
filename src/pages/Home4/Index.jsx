@@ -24,6 +24,10 @@ const Home4 = () => {
 
             <Footer4 
                 footerLogo={footerLogo}
+                containerClass={'custom8'}
+                rowClass={'y-middle'}
+                footerLogoArea={true}
+                btnIcon={true}
             />
         </>
     );

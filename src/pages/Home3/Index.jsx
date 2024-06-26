@@ -10,7 +10,7 @@ const Home3 = () => {
         <>
             <Header
                 topbarClass={'toolbar-style3 toolbar-modify4'}
-                // toplbarLayout={true}
+                containerClass={'box-layout'}
                 toplbarLayout3={true}
                 mailAddress={true}
                 mapAddress={true}

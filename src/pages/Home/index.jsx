@@ -17,6 +17,7 @@ const Home = () => {
                 addressBox={true}
                 toplbarLayout1={true}
                 headerLogoSticky={headerLogo}
+                containerClass={'custom13'}
             />
             <HomeMain />
             <Footer

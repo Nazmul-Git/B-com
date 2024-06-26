@@ -1,14 +1,25 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const SectionTitle = ({ title, details, mainClass, otherClass, titleClass, detailClass, borderStyle, otherTitleClass, borderStyleClass, btnPart, btnClass, linkClass, href, linkTitle, watermarkClass, titleClass2, title2, subText, subtextTitle, subtextTitleClass,detailClass2,details2 }) => {
+const SectionTitle = ({ title, details, mainClass, otherClass, titleClass, detailClass, borderStyle, otherTitleClass, borderStyleClass, btnPart, btnClass, linkClass, href, linkTitle, watermarkClass, titleClass2, title2, subText, subtextTitle, subtextTitleClass, detailClass2, details2,titleBreak1,titleBreak2,lineBreak }) => {
     return (
         <div className={`${mainClass ? mainClass : 'sec-title'} ${otherClass ? otherClass : 'mb-20'} `}>
             {
                 subText &&
                 <span className={`${subtextTitleClass ? subtextTitleClass : "sub-text"}`}>{subtextTitle}</span>
             }
-            <h2 className={`${titleClass ? titleClass : 'title'} ${otherTitleClass ? otherTitleClass : ''}`}>{watermarkClass ? <span className={watermarkClass}>{title}</span> : title}</h2>
+            <h2 className={`${titleClass ? titleClass : 'title'} ${otherTitleClass ? otherTitleClass : ''}`}>
+                {lineBreak ? (
+                    <>
+                        {titleBreak1}
+                        <br />
+                        {titleBreak2}
+                    </>
+                ) : (
+                    watermarkClass ? <span className={watermarkClass}>{title}</span> : title
+                )}
+            </h2>
+
             {
                 details &&
                 <p className={`${detailClass ? detailClass : 'desc desc8'}`}>{details && details}</p>

@@ -16,6 +16,7 @@ const Home6 = () => {
                 btnQuote={true}
                 btnQuoteClass={'btn-normal'}
                 topbarClass={true}
+                containerClass={'box-layout'}
             />
             <HomeSixMain />
 

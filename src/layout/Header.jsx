@@ -96,7 +96,7 @@ const Header = ({ topbarClass,containerClass,otherClass, downloadIcon, headerSty
                 }
 
                 <div className={`menu-area menu-sticky ${isSticky ? 'sticky' : ''}`}>
-                    <div className={`container ${containerClass ? containerClass : 'custom13'} `}>
+                    <div className={`container ${containerClass ? containerClass : ''} `}>
                         <div className="row-table">
                             <div className="col-cell header-logo">
                                 <div className="logo-area">
@@ -114,13 +114,10 @@ const Header = ({ topbarClass,containerClass,otherClass, downloadIcon, headerSty
                                                 <MenuItem />
                                             </ul>
                                         </nav>
-
                                     </div>
                                 </div>
                             </div>
                             <div className="col-cell">
-
-
                                 <div className="expand-btn-inner">
                                     <ul>
                                         {

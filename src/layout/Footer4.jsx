@@ -1,21 +1,33 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const Footer4 = ({ footerLogo, footerStyleClass, footerModifyClass, btnClass }) => {
+const Footer4 = ({ footerLogo, footerStyleClass, footerModifyClass, btnClass, containerClass, rowClass,footerTitleArea,footerLogoArea,footerTitle,btnIcon }) => {
     return (
         <footer id="rs-footer" className={`rs-footer ${footerStyleClass ? footerStyleClass : 'footer-style2'} ${footerModifyClass ? footerModifyClass : ''}`}>
-            <div className="container custom8">
+            <div className={`container ${containerClass ? containerClass : ''} custom8`}>
                 <div className="footer-top">
-                    <div className="row y-middle">
+                    <div className={`row ${rowClass ? rowClass : ''}`}>
                         <div className="col-lg-4 md-mb-30 pr-60 md-pr-15">
-                            <div className="footer-logo">
-                                <Link to="/"><img src={footerLogo} alt="Logo" /></Link>
-                            </div>
+                            {
+                                footerTitleArea &&
+                                <h5 className="footer-title">
+                                    {footerTitle}
+                                </h5>
+                            }
+                            {
+                                footerLogoArea &&
+                                <div className={"footer-logo"}>
+                                    <Link to="/"><img src={footerLogo} alt="Logo" /></Link>
+                                </div>
+                            }
                             <p className="description">We are the world best consulting business company since 2005 and serving many world class company over the world.</p>
                             <div className="footer-btn">
                                 <Link className={`readon started footer-more ${btnClass ? btnClass : ''}`} to="/contact-us-1">
                                     <span className="btn-txt">Discover More</span>
-                                    <i className="ri-arrow-right-fill"></i>
+                                    {
+                                        btnIcon &&
+                                        <i className="ri-arrow-right-fill"></i>
+                                    }
                                 </Link>
                             </div>
                         </div>

@@ -17,6 +17,7 @@ const HomeTwo = () => {
                 headerLogoSticky={headerLogoWhite2}
                 toplbarLayout3={true}
                 btnQuote={true}
+                containerClass={'custom13'}
             />
             <HomeTwoMain />
 
