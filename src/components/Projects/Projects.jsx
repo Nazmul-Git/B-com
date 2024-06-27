@@ -6,7 +6,7 @@ import { Navigation, Pagination, Autoplay } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import ProjectCard1 from '../../components/Projects/ProjectCard1';
 
-const Projects = ({ projects, previewPhone, previewPhoneExt, previewSM, previewMd, preview, showPagination }) => {
+const Projects = ({ projects, previewPhone, previewPhoneExt, previewSM, previewMd, preview, showPagination, isTextContentFalse, imageInLink }) => {
     const sliderRef = useRef(null);
     const prevRef = useRef(null);
     const nextRef = useRef(null);
@@ -80,6 +80,8 @@ const Projects = ({ projects, previewPhone, previewPhoneExt, previewSM, previewM
                             categoryLink={project.categoryLink}
                             titleLink={project.titleLink}
                             description={project.description}
+                            isTextContentFalse={isTextContentFalse}
+                            imageInLink={imageInLink}
                         />
                     </SwiperSlide>
                 ))}

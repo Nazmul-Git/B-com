@@ -2,7 +2,6 @@ import React from 'react';
 import PricingPlan from '../../components/PricingPlan/PricingPlan';
 
 const PricingSection = () => {
-
     const plans = [
         {
             id: 1,
@@ -30,7 +29,7 @@ const PricingSection = () => {
                 { text: 'Export PDF', unlocked: false }
             ],
             hasBadge: true,
-            badgeText: 'Save Over 25%',
+            badgeText: '',
         },
         {
             id: 3,
@@ -46,16 +45,15 @@ const PricingSection = () => {
             ],
         }
     ];
-
     return (
         <PricingPlan
             plans={plans}
             title={'Our Pricing Plan'}
-            titleClass={'title title11'}
-            otherClass={'md-mb-100'} 
-            spaceingClass={'pt-140 pb-140 md-pt-80 md-pb-80'}
-            containerHeading={true}
-            modifyClass={'pricing-modify2'}
+            titleClass={'title title10'}
+            otherClass={'text-center mb-55'}
+            backgroundImg={'gray-bg21'} 
+            spaceingClass={'pt-125 pb-130 md-pt-75 md-pb-80'}
+            containerHeading={false}
         />
     );
 };

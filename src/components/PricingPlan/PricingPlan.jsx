@@ -2,18 +2,32 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import SectionTitle from '../../components/SectionTitle/SectionTitle';
 
-const PricingPlan = ({plans,title,titleClass,otherClass,backgroundImg,spaceingClass}) => {
+const PricingPlan = ({ plans, title, titleClass, otherClass, backgroundImg, spaceingClass, modifyClass, containerHeading, isShow }) => {
     const [billingCycle, setBillingCycle] = useState('monthly');
 
     return (
-        <div className={`pricing-container rs-pricing-container pricing-style1 pricing-modify2 ${backgroundImg ? backgroundImg : ''} ${spaceingClass ? spaceingClass : 'pt-310 pb-140 md-pt-110 md-pb-80'}`}>
-            <div className="container">
+        <div className={`pricing-container rs-pricing-container pricing-style1 ${modifyClass ? modifyClass : ''} ${backgroundImg ? backgroundImg : ''} ${spaceingClass ? spaceingClass : 'pt-310 pb-140 md-pt-110 md-pb-80'}`}>
+            {containerHeading &&
+                <div className="container">
+                    <SectionTitle
+                        title={title}
+                        titleClass={titleClass}
+                        otherClass={otherClass}
+                    />
+                </div>
+            }
+            {
+                !containerHeading &&
                 <SectionTitle
-                    title={title}
-                    titleClass={titleClass}
-                    otherClass={otherClass} 
+                    otherClass={'text-center mb-55'}
+                    subText={true}
+                    subtextTitle={'Pricing plan'}
+                    subtextTitleClass={'sub-text sub-text2'}
+                    lineBreak={true}
+                    titleBreak1={'Simple, Transparent'}
+                    titleBreak2={'Pricing for You.'}
                 />
-            </div>
+            }
             <div className="pricing-switcher">
                 <p className="fieldset mnt-ac">
                     <input

@@ -17,10 +17,35 @@ const ContactSection = () => {
         });
     };
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
-        // Handle form submission logic here, such as sending data to the backend
-        // console.log('Form submitted:', formData);
+        try {
+            const response = await fetch('./contact.php', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(formData),
+            });
+            if (response.ok) {
+                alert('Message sent successfully!');
+                setFormData({
+                    name: '',
+                    email: '',
+                    topic: '',
+                    phone: '',
+                    message: ''
+                });
+                setFormMessages('Message sent successfully!');
+            } else {
+                alert('Failed to send message.');
+                setFormMessages('Failed to send message.');
+            }
+        } catch (error) {
+            console.error('Error:', error);
+            alert('An error occurred while sending the message.');
+            setFormMessages('An error occurred while sending the message.');
+        }
     };
 
     return (

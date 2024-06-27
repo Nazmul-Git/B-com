@@ -54,6 +54,8 @@ const PricingSection = () => {
             titleClass={'title title10'}
             otherClass={'md-mb-100'}
             backgroundImg={'bg20'} 
+            containerHeading={true}
+            modifyClass={'pricing-modify2'}
         />
     );
 };

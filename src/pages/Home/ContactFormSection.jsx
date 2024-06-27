@@ -29,17 +29,35 @@ const ContactFormSection = ({ contactArrow, supportClients }) => {
         });
     };
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
-        // Handle form submission here, e.g., send formData to server
-        console.log(formData);
-        // Reset form
-        setFormData({
-            name: '',
-            email: '',
-            phone: '',
-            message: ''
-        });
+        try {
+            const response = await fetch('./contact.php', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(formData),
+            });
+            if (response.ok) {
+                alert('Message sent successfully!');
+                setFormData({
+                    name: '',
+                    email: '',
+                    topic: '',
+                    phone: '',
+                    message: ''
+                });
+                setFormMessages('Message sent successfully!');
+            } else {
+                alert('Failed to send message.');
+                setFormMessages('Failed to send message.');
+            }
+        } catch (error) {
+            console.error('Error:', error);
+            alert('An error occurred while sending the message.');
+            setFormMessages('An error occurred while sending the message.');
+        }
     };
 
     return (
@@ -47,7 +65,7 @@ const ContactFormSection = ({ contactArrow, supportClients }) => {
             <div className="container custom10">
                 <div className="row">
                     <div className="col-lg-7 md-mb-50">
-                        <SectionTitle title={"We're here to support"} titleClass={'title' } otherClass={'mb-55 md-mb-35'}/>
+                        <SectionTitle title={"We're here to support"} titleClass={'title'} otherClass={'mb-55 md-mb-35'} />
                         <div className="row y-middle">
                             <div className="col-lg-8">
                                 <div className="icon-box-wrapper">

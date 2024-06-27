@@ -2,7 +2,7 @@ import React from 'react';
 import CountUp from 'react-countup';
 import ProgressBar from '../ProgressBar/ProgressBar';
 
-const CounterWithProgress = ({ counters, colClass, otherClass, bgBarColor, bgBarProgressColor }) => {
+const CounterWithProgress = ({ counters, colClass, otherClass, bgBarColor, bgBarProgressColor, barPercentageText }) => {
 
     return (
         <div className="row">
@@ -23,6 +23,7 @@ const CounterWithProgress = ({ counters, colClass, otherClass, bgBarColor, bgBar
                         title={counter.title}
                         bgBarColor={bgBarColor}
                         bgBarProgressColor={bgBarProgressColor}
+                        barPercentageText={barPercentageText}
                     />
                 </div>
             ))}

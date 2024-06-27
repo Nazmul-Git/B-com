@@ -38,9 +38,9 @@ const ProgressSection = () => {
                             details={'Malesuada bibendum arcu vitae elementum. Semper eget duis at tellus at urna condimentum. Aliquam malesuada bibendum arcu vitae elementum curabitur vitae nunc sed. Fringilla urna porttitor rhoncus dolor purus non enim.'}
                         />
                         <div className="cl-skill-bar">
-                            <ProgressBar duration={2000} targetProgress={80} title={'Business Strategy'} bgBarColor={'rgba(240, 92, 78, 0.2)'} bgBarProgressColor={'#f05c4e'} height={'7px'} />
-                            <ProgressBar duration={2000} targetProgress={75} title={'Cyber Security'} bgBarColor={'rgba(240, 92, 78, 0.2)'} bgBarProgressColor={'#f05c4e'} height={'7px'} />
-                            <ProgressBar duration={2000} targetProgress={95} title={'Softwar Development'} bgBarColor={'rgba(240, 92, 78, 0.2)'} bgBarProgressColor={'#f05c4e'} height={'7px'} />
+                            <ProgressBar duration={2000} targetProgress={80} title={'Business Strategy'} bgBarColor={'rgba(240, 92, 78, 0.2)'} bgBarProgressColor={'#f05c4e'} height={'7px'} barPercentageText={true}/>
+                            <ProgressBar duration={2000} targetProgress={75} title={'Cyber Security'} bgBarColor={'rgba(240, 92, 78, 0.2)'} bgBarProgressColor={'#f05c4e'} height={'7px'} barPercentageText={true}/>
+                            <ProgressBar duration={2000} targetProgress={95} title={'Softwar Development'} bgBarColor={'rgba(240, 92, 78, 0.2)'} bgBarProgressColor={'#f05c4e'} height={'7px'} barPercentageText={true}/>
                         </div>
                     </div>
                 </div>

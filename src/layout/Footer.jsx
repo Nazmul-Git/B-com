@@ -5,7 +5,7 @@ const Footer = ({ footerLogo, footerClass, footerStyleClass, socialIcon, footerH
     return (
         <footer id="rs-footer" className={`rs-footer ${footerHomeMain ? footerHomeMain : ''} ${footerClass ? footerClass : 'footer-style1'} ${footerStyleClass ? footerStyleClass : ''}`}>
             <div className="container custom8">
-                <div className="footer-top">
+                <div className={"footer-top"}>
                     <div className="row">
                         <div className="col-lg-3 md-mb-30">
                             <div className="footer-logo">
