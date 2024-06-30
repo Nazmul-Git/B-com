@@ -1,11 +1,19 @@
 import React from 'react';
-import ServiceSection from './ServiceSection';
+import TeamSection from './TeamSection';
+import CTASection from './CTASection';
+import BannerCommon from '../../../components/Banner/BannerCommon';
+import bgImage from '../../../assets/images/breadcrumbs/inr-2.jpg'
 
 const TeamMain = () => {
     return (
-        <div>
-           <ServiceSection/> 
-        </div>
+        <>
+            <BannerCommon
+                pageTitle={'Our Team'}
+                bgImage={bgImage}
+            />
+            <TeamSection />
+            <CTASection />
+        </>
     );
 };
 

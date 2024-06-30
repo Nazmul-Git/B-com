@@ -1,11 +1,19 @@
 import React from 'react';
-import ServiceSection from './ServiceSection';
+import ProjectSection from './ProjectSection';
+import CTASection from './CTASection';
+import bgImage from '../../../../assets/images/breadcrumbs/inr-3.jpg'
+import BannerCommon from '../../../../components/Banner/BannerCommon';
 
 const Portfolio3Main = () => {
     return (
-        <div>
-            <ServiceSection/>
-        </div>
+        <>
+            <BannerCommon
+                pageTitle={'Portfolio 03'}
+                bgImage={bgImage}
+            />
+            <ProjectSection/>
+            <CTASection />
+        </>
     );
 };
 

@@ -1,11 +1,19 @@
 import React from 'react';
-import ServiceSection from './ServiceSection';
+import ProjectSection from './ProjectSection';
+import CTASection from './CTASection';
+import bgImage from '../../../../assets/images/breadcrumbs/inr-2.jpg'
+import BannerCommon from '../../../../components/Banner/BannerCommon';
 
 const PortfolioFilterMain = () => {
     return (
-        <div>
-            <ServiceSection/>
-        </div>
+        <>
+            <BannerCommon
+                pageTitle={'Portfolio Filter'}
+                bgImage={bgImage}
+            />
+            <ProjectSection/>
+            <CTASection />
+        </>
     );
 };
 

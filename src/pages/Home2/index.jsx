@@ -2,7 +2,7 @@ import React from 'react';
 import HomeTwoMain from './HomeTwoMain';
 import Header from '../../layout/Header';
 import headerLogoWhite2 from '../../assets/images/logo-white2.png';
-import logoBlack from '../../assets/images/logo-black.png'
+import logoBlack from '../../assets/images/logo-black.png';
 import FooterWithNewsLetter from '../../layout/FooterWithNewsLetter';
 const HomeTwo = () => {
     return (

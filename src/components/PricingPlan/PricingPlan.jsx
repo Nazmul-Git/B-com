@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import SectionTitle from '../../components/SectionTitle/SectionTitle';
 
-const PricingPlan = ({ plans, title, titleClass, otherClass, backgroundImg, spaceingClass, modifyClass, containerHeading, isShow }) => {
+const PricingPlan = ({ plans, title, titleClass, otherClass, backgroundImg, spaceingClass, modifyClass, containerHeading }) => {
     const [billingCycle, setBillingCycle] = useState('monthly');
 
     return (

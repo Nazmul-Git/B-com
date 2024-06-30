@@ -6,7 +6,7 @@ const Partner = ({ logo,colClass }) => {
         <div className={`${colClass ? colClass :'col-lg-4' } col-md-6 col-sm-6 col-6 logo-grid-item`}>
             <div className="partner-item">
                 <div className="logo-img">
-                    <Link to="https://rstheme.com">
+                    <Link to={logo.Link}>
                         <img className="hovers-logos" src={logo.src} alt={logo.alt} />
                         <img className="mains-logos" src={logo.src} alt={logo.alt} />
                     </Link>
